@@ -1,0 +1,73 @@
+/* Container to hold all lines */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack lines vertically */
+    height: 100vh; /* Full height of the viewport */
+    justify-content: center; /* Center vertically */
+    padding: 0 20px; /* Optional padding */
+}
+
+/* Individual line styling */
+.line {
+    display: flex;
+    justify-content: space-between; /* Push left and right text to sides */
+    align-items: center; /* Align vertically centered */
+    margin-bottom: 1rem; /* Space between lines */
+}
+
+/* Left side of the line */
+.left {
+    font-size: 3rem; /* Adjust font size for the left text */
+    color: whitesmoke;
+    font-family: "Reenie Beanie", cursive;
+    flex: 1; /* Take up the left side of the screen */
+    text-align: left;
+}
+
+/* Right side of the line - Common styling */
+.right {
+    font-size: 8rem; /* Large font size for "you" */
+    font-family: "Berkshire Swash", sans-serif;
+    flex: 1; /* Take up the right side of the screen */
+    text-align: right;
+}
+
+/* Specific colors for "you" */
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.blue {
+    color: blue;
+}
+
+/* Styling for the body */
+body {
+    background-color: black; /* Background color */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Link styling for "you" */
+a.link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the text color from parent */
+    transition: transform 0.3s ease; /* Add smooth transformation */
+}
+
+a.link:hover {
+    transform: scale(1.1); /* Grow slightly on hover */
+}
+
+/* Optional: Hover effect on the right side for all links */
+.right:hover a.link {
+    transform: scale(1.1); /* Slightly grow when hovered over */
+}

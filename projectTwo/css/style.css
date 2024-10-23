@@ -1,0 +1,43 @@
+html, body {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    text-align: center;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.title {
+    font-family: "Passion One", sans-serif;
+    font-size:8rem;
+    display: inline-block;
+    transition: transform 800ms ease;
+}
+
+.artist {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    display: inline-block;
+    transition: transform 300ms ease;
+}
+
+.title:hover {
+    transform: scale(1.5);
+}
+
+.artist:hover {
+    transform: scale(1.1);
+}
+
+
+

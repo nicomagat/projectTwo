@@ -1,0 +1,52 @@
+html, body {
+    background-color: black
+}
+
+.full-screen {
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
+    background-color: black;
+}
+
+.text {
+    color: whitesmoke; 
+    font-size: 12vw;
+    text-align: center;
+    font-family: "Passion One", sans-serif;
+}
+
+.fade-in {
+    opacity: 0; 
+    animation: fadeIn 0.5s forwards; 
+    animation-delay: calc(var(--i) * 0.5s);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.link {
+    color: red;
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+}
+
+.link:hover {
+    animation: flicker 0.1s infinite; 
+    text-decoration: none; 
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+}

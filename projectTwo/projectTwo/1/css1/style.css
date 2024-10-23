@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    text-align: center;
+}
+
+.word {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 3rem;
+    color: whitesmoke;
+    opacity: 0; 
+    animation: fadeIn 1s ease forwards; 
+}
+
+
+.word:nth-child(1) { animation-delay: 0s; }
+.word:nth-child(2) { animation-delay: 0.5s; }
+.word:nth-child(3) { animation-delay: 1s; }
+.word:nth-child(4) { animation-delay: 1.5s; }
+.word:nth-child(5) { animation-delay: 2s; }
+
+
+.fade-in-text {
+    margin-top: 20px; 
+}
+
+.devastated {
+    display: inline-block;
+    font-family: "Berkshire Swash", serif;
+    text-decoration:none;
+    font-size: 6rem;
+    color: #638d96;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 2.5s;
+    width: 100%;
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.devastated:hover {
+    filter: blur(0);
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}

@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: whitesmoke; 
+    font-family: "Playfair Display", serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+}
+
+.sentence {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+}
+
+.text {
+    font-size: 3rem;
+    font-family: "Reenie Beanie", cursive;
+}
+
+.older {
+    transition: color 0.3s ease;
+    font-family: "Londrina Sketch", sans-serif;
+    color: red;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    20% { opacity: 0.8; }
+    40% { opacity: 0.5; }
+    60% { opacity: 0.9; }
+    80% { opacity: 0.6; }
+    100% { opacity: 1; }
+
+}
+
+.older:hover {
+        animation: flicker 0.3s infinite;
+    }
+
+.longer {
+    transition: color 0.3s ease;
+    font-family: "Passion One", sans-serif;
+    text-decoration:none;
+    color: #69bf64;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    20% { opacity: 0.8; }
+    40% { opacity: 0.5; }
+    60% { opacity: 0.9; }
+    80% { opacity: 0.6; }
+    100% { opacity: 1; }
+
+}
+
+.longer:hover {
+        animation: flicker 0.3s infinite;
+    }
